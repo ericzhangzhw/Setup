@@ -49,6 +49,12 @@
 	3. Add ssh private key: `ssh-add ~/.ssh/id_ed25519`
 	4. Copy output from : `cat ~/.ssh/id_ed25519.pub` to github account setting
 
+### docker
+* Install
+	1. Run `sudo amazon-linux-extras install docker` to install
+	2. Run `sudo service docker start` to start docker
+	3. Run `docker run hello-world` to verify
+
 ### postgresql client
 
 ```
@@ -68,3 +74,74 @@ sudo yum install postgresql
 	3. Check version: `serverless --version`
 
 ## Mac
+### zsh
+* zsh
+
+	```
+	brew install zsh
+	```
+* oh-my-zsh
+
+	```
+	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	```
+* Setup
+
+	Update `ZSH_THEME="dallas"` | `ZSH_THEME="fino-time"` in `~/.zshrc` 
+	
+### aws
+* Install
+
+	```
+	curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+	unzip awscli-bundle.zip
+	sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+	```
+* Setup
+
+	```
+	aws configure
+	```
+	Enter aws config info:
+	
+	```
+	AWS Access Key ID [None]: {Access ID}
+	AWS Secret Access Key [None]: {Access Key}
+	Default region name [None]: us-west-2
+	Default output format [None]: json
+	```
+	
+### git
+* Install
+
+	```
+	brew install git-all
+	```
+* Setup 
+	1. Generate new ssh key: `ssh-keygen -t ed25519 -C "{email}"`
+	2. Start agent: `eval "$(ssh-agent -s)"`
+	3. Add ssh private key: `ssh-add ~/.ssh/id_ed25519`
+	4. Copy output from : `cat ~/.ssh/id_ed25519.pub` to github account setting
+
+### docker
+* Install
+	
+	Download Mac Desktop app
+	
+### postgresql client
+
+```
+brew install postgresql
+```
+### terraform
+* Install
+	1. Get tfenv `brew install tfenv`
+	2. Install Terraform `tfenv install 0.14.9`
+	3. Set default Terraform `tfenv use 0.14.9`
+	4. Check version: `terraform --version`
+
+### serverless
+* Install
+	1. Download serverless: `curl -o- -L https://slss.io/install | VERSION=2.28.0 zsh`
+	2. Add `export PATH="$HOME/.serverless/bin:$PATH"` to `~/.zshrc` and run `source ~/.zshrc`
+	3. Check version: `serverless --version`
