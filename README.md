@@ -73,6 +73,16 @@ sudo yum install postgresql
 	2. Add `export PATH="$HOME/.serverless/bin:$PATH"` to `~/.zshrc` and run `source ~/.zshrc`
 	3. Check version: `serverless --version`
 
+### pyenv
+* Install 
+
+	`curl https://pyenv.run | zsh`
+* Setup
+
+	```
+	echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
+   echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+   ```
 ## Mac
 ### zsh
 * zsh
