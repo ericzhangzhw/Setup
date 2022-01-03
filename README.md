@@ -155,3 +155,9 @@ brew install postgresql
 	1. Download serverless: `curl -o- -L https://slss.io/install | VERSION=2.28.0 zsh`
 	2. Add `export PATH="$HOME/.serverless/bin:$PATH"` to `~/.zshrc` and run `source ~/.zshrc`
 	3. Check version: `serverless --version`
+
+### node.js
+* Install
+```
+brew install node
+```
