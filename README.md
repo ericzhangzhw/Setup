@@ -161,3 +161,6 @@ brew install postgresql
 ```
 brew install node
 ```
+
+### VS Code
+* Add terminal `code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}`
