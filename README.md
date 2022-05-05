@@ -156,6 +156,9 @@ brew install postgresql
 	2. Add `export PATH="$HOME/.serverless/bin:$PATH"` to `~/.zshrc` and run `source ~/.zshrc`
 	3. Check version: `serverless --version`
 
+### Python
+* Install `
+
 ### node.js
 * Install
 ```
