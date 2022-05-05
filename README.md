@@ -157,7 +157,7 @@ brew install postgresql
 	3. Check version: `serverless --version`
 
 ### Python
-* Install `
+* Install
 
 ### node.js
 * Install
