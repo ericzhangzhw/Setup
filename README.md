@@ -169,3 +169,15 @@ brew install node
 
 ### VS Code
 * Add terminal `code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}`
+
+### JWT 
+* Install
+```
+npm install -g jwt-cli
+```
+
+### JSON
+* Install
+```
+brew install jq
+```
